@@ -14,10 +14,10 @@
 
   //random
   function random(min, max) {
-    return Math.floor(Math.random() * (max - min + 1)) + min;
+    return Math.floor(Math.random() * (max - min + 1) + min);
   }
 
-  //create SnowBalls
+  //create Snow Balls
   function createSnowBalls(canvas, numberOfSnowBalls) {
     return [...Array(numberOfSnowBalls)].map(() => {
       return {
@@ -29,22 +29,20 @@
     });
   }
 
-  //drawSnowBalls
+  //Draw snow ball
   function drawSnowBall(canvasContext, snowBall) {
     canvasContext.beginPath();
-    canvasContext.arc(snowBall.x, snowBall.y, snowBall.radius, 0, Math.PI * 2);
-    canvasContext.fillStyle = `rgba(0, 0, 128, ${snowBall.opacity})`;
+    canvasContext.arc(snowBall.x, snowBall.y, snowBall.radius, 0, Math.PI * 2 );
+    canvasContext.fillStyle = `rgba(255, 255, 255, ${snowBall.opacity})`;
     canvasContext.fill();
   }
 
   // run
   function run() {
-    // destructuring object setup
     const { canvas, canvasContext, numberOfSnowBalls } = setup();
-    // เรียกใช้ function createSnowBalls
-    createSnowBalls(canvas, numberOfSnowBalls);
-    // เรียกใช้งาน function drawSnowBalls
-    snowBalls.forEach((snowBall) => drawSnowBall(canvasContext, snowBall));
+    const snowBalls = createSnowBalls(canvas, numberOfSnowBalls);
+    // snowBall.forEach((snowBall) => drawSnowBall(canvasContext, snowBall)) time 10.09 
+    drawSnowBall(canvasContext, snowBalls[0])
   }
 
   run();
