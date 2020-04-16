@@ -1,0 +1,19 @@
+{
+  "name": "21-days-javascript-challenge",
+  "version": "1.0.0",
+  "description": "- Element canvas [html] สามารถวาดรูปได้ตามที่เราต้องการ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Wissanukhong/mini-javaScript-workshop.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Wissanukhong/mini-javaScript-workshop/issues"
+  },
+  "homepage": "https://github.com/Wissanukhong/mini-javaScript-workshop#readme"
+}
