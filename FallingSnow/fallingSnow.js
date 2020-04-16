@@ -23,6 +23,8 @@
       return {
         x: random(0, canvas.width),
         y: random(0, canvas.height),
+        opacity: random(0.5, 1),
+        radius: random(2, 4)
       };
     });
   }
@@ -30,8 +32,8 @@
   //drawSnowBalls
   function drawSnowBall(canvasContext, snowBall) {
     canvasContext.beginPath();
-    canvasContext.arc(snowBall.x, snowBall.y, 4, 0, Math.PI * 2);
-    canvasContext.fillStyle = `rgba(0,0,128, 1)`;
+    canvasContext.arc(snowBall.x, snowBall.y, snowBall.radius, 0, Math.PI * 2);
+    canvasContext.fillStyle = `rgba(0, 0, 128, ${snowBall.opacity})`;
     canvasContext.fill();
   }
 
@@ -42,7 +44,7 @@
     // เรียกใช้ function createSnowBalls
     createSnowBalls(canvas, numberOfSnowBalls);
     // เรียกใช้งาน function drawSnowBalls
-    snowBalls.forEach((snowBall) => drawSnowBall(canvsContext, snowBall));
+    snowBalls.forEach((snowBall) => drawSnowBall(canvasContext, snowBall));
   }
 
   run();
