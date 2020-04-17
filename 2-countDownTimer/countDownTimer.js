@@ -17,10 +17,13 @@
 
         setElementInnerText('days', Math.floor(unixTimeLeft / DAY));
         setElementInnerText('hours', Math.floor(unixTimeLeft % DAY / HOUR));
+        setElementInnerText('minutes', Math.floor(unixTimeLeft % HOUR / MINTUE));
+        setElementInnerText('seconds', Math.floor(unixTimeLeft % MINUTE / SECOND));
     }
 
     function run() {
-        countDown()
+        countDown();
+        setInterval(countDown, SECOND);
     }
     run();
 })();
