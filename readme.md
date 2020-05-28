@@ -1,4 +1,4 @@
-<div style="text-align: center;">
+<div align="center">
     <h1>21 Days Challenge</h1>
     <img src="Picture/0.javaScript.png">
 </div>
@@ -38,13 +38,11 @@
 
 ```css
 body {
-  body {
-    padding: 0;
-    margin: 0;
-    background-image: url("Link URL ของรูปภาพที่เราต้องการใช้งาน");
-    background-size: cover; /*ขยายรูปภาพให้มีขนาดด้านกว้าง, สูง เต็มหน้าจอของ Browser*/
-    background-repeat: no-repeat; 
-  }
+  padding: 0;
+  margin: 0;
+  background-image: url("Link URL ของรูปภาพที่เราต้องการใช้งาน");
+  background-size: cover; /*ขยายรูปภาพให้มีขนาดด้านกว้าง, สูง เต็มหน้าจอของ Browser*/
+  background-repeat: no-repeat;
 }
 ```
 
