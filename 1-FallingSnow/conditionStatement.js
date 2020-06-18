@@ -17,3 +17,24 @@ function myGrade(grade) {
 }
 
 myGrade(80);
+
+// Random number between 1-10
+function run () {
+  for (i = 0; i < 10; i++) {
+    let randomNumber = Math.floor(Math.random()*10) + 1;
+    return randomNumber;
+  }
+}
+
+// Call the function run then Loop random number ten time 
+function runRandomNumber () {
+  for (i = 0; i < 10; i++) {
+    let running = run();
+    console.log(running);
+  }
+}
+
+runRandomNumber();
+
+
+
