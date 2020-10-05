@@ -7,7 +7,7 @@
 
 ซึ่งในส่วนนี้ก็มีสิ่งที่ได้เรียนต่างดังต่อไปนี้
 
-![Failing the snow](Picture/1.FailingTheSnow.png)
+![Failing the snow](/img/1.FailingTheSnow.png)
 
 # HTML
 
